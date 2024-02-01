@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check-out</title>
+    <link rel="stylesheet" href="spec.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="logo headitem">
+            <a href="frames.html"><img class="logopic" src="Images/Specreate.jpg" alt="Specreate"></a>
+        </div>
+
+        <div class="search_bar headitem mid">
+            <div class="searchcontainer">
+            <input class="search" type="search" placeholder="Search..."/>
+            <button class="searchbttn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <div class="profile headitem">
+            <a href="profile.html"><img class="icon" src="Images/ProfileIcon.jpg" alt="Specreate"></a>
+            <a href="checkout.html"><img class="icon" src="/Images/bagIcon.jpg" alt="Specreate"></a>
+            <div>
+                
+            </div>
+        </div>
+
+    </div>
+
+<!--------------- Navigation bar! ---------------->
+    <ul class="navigation">
+        <li class="navli"><a href="index.html" >Frames</a></li>
+        <li class="navli"><a href="sunglass.html">Sunglasses</a></li>
+        <li class="navli"><a href="contactlens.html">Contact Lens</a></li>
+        <li class="navli"><a href="eyedrops.html">Eyedrops</a></li>
+    </ul>
+
+<!------------------- BODY! ---------------------------->
+
+    <div class="checkout">
+        <div class="carttitle">
+            <h1>Shopping Bag</h1>
+            <button id="checkoutbttn"><a>Proceed to Checkout</a></button>
+        </div>
+
+        <div class="checkoutdetails" >
+            <table   cellspacing="15px">
+                <tr>
+                    <td></td>
+                    <td>Product Name</td>
+                    <td>Unit Price</td>
+                    <td>Qty</td>
+                    <td>Subtotal</td>
+                </tr>
+
+                <tr>
+                    <td><img class="checkoutimg"  src="/Images/eyeglass1.jpg" alt=""></td>
+
+                    <td><h3>Boston bt10071</h3><br/><p>Lens: Bluelight Filter</p></td>
+
+                    <td><p>Lens: ₱2000 <br> Frame: ₱1500</p></td>
+
+                    <td><input type="number" min="1" max="5"></td>
+                    <td>₱3500</td>
+                    <td ><Button style="padding: 5px;"><i class="fa fa-trash"></i></Button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

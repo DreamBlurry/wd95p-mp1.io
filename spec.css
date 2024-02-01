@@ -1,0 +1,459 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*********************** HEADER ***************************/
+.header{
+    position: relative;
+    text-align: center;
+    display:flex;
+    height: 80px;
+    background-color: rgb(0, 51, 102);
+}
+
+.headitem{
+    position: relative;
+    margin:auto;
+    align-items: center;
+    width: 20%;
+}
+
+.headitem.mid{
+    width: 60%;
+}
+
+#heada:hover{
+    opacity: 0.5;
+}
+
+
+
+.logo{
+    display: inline-block;
+}
+.logo:hover{
+    opacity: 0.5;
+}
+.logopic{
+    height: 70px;
+    width: 130px;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.search_bar{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    height:50px;
+    width: 200px;
+    box-shadow: 0px 0px 3px 3px  rgba(0,0,0,0.2);
+}
+ 
+
+.search { 
+    font-size: 15px;
+    border: 0;
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    text-align: left;
+    width: 80%;
+    height: 100%;        
+}
+.searchcontainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.searchbttn{
+    text-align: center;
+    border-style:none;
+    float: right;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+}
+.searchbttn:hover{
+    background-color: lightgray;
+}
+
+/*********************** NAVIGATION BAR ***************************/
+
+.navigation{
+    text-align: center;
+    list-style-type: none;
+    background-color: whitesmoke;
+    margin:auto;
+    padding:0px;
+    width: 80%;
+    position: relative;
+    top: 0;
+    height:10%;
+    overflow: hidden;
+}
+
+.navli{
+    padding: 10px;
+    height: 100%;
+    text-align: center;
+    float: left;
+    display: inline;
+    border-left: solid white 1px;
+}
+
+.navli:hover:not(.active){
+    background-color: gray;
+    height: 100%;
+    
+}
+
+.navli a{
+    display: block;
+    text-decoration: none ;
+    color: black;
+    padding: 5px 10px;
+
+}
+
+.profile{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+/*************** HAMBURGER MENU! ******************/
+#hamnav{
+    margin: 0;
+    font-size: 50px;
+    color: white;
+    float:right;
+    display:flex;
+    flex-direction: column;
+}
+
+#hamburger {
+    display:none;
+}
+
+#hamnav label{
+    display: none;
+}
+
+#hamnav label:hover{
+    opacity: 0.5;
+}
+
+
+
+#hamitems{
+    display: none;
+    width: 100%;
+    background-color: rgb(0,51,102);
+}
+
+#hamitems #hamul{
+    list-style-type: none;
+    text-align: left;
+}
+
+#hamitems #hamli{
+    padding:20px 20px 20px 0;
+}
+
+#hamitems a{
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+#hamitems #hamli:hover, #hama:hover { 
+    color:black;
+    background-color: aquamarine;
+}
+
+
+
+
+
+/*********************** CONTENT ***************************/
+.contents{
+    width:90%;
+    margin: 50px auto;
+    display: flex;
+    color: white;
+
+}
+
+.category{
+    width: 30%;
+}
+
+
+
+
+
+.selection{
+
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70%;
+}
+
+.framecat{
+    background-color: brown;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+}
+
+.select{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 2px;
+    text-align: center;
+}
+
+.cardlink{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+.cardcontainer{
+    background-color: whitesmoke;
+    display: block;
+    height: 230px;
+    width:180px;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+}
+
+.cardimage{
+    width: 100%;
+    height: 180px;
+}
+
+.carddescription .brand{
+    font-weight: bolder;
+}
+
+.selectimg{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+
+}
+.cardcontainer:hover{
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+
+/*********************** FOOTER ***************************/
+.footer{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+}
+
+.griditem{
+    width: 33.33%;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: left;
+}
+.griditem.mid{
+    margin: 0 1px;
+}
+
+@media screen  and (max-width:871px ) {
+    .selection{
+        margin: 10px auto;
+        grid-template-columns: auto auto;
+    }
+    .headitem{
+        margin: auto;
+        align-items: center;
+        width: 30%;
+    }
+    
+    .headitem.mid{
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width:616px){
+
+    #hamnav label{
+        display:block;
+    }
+
+    #hamnav input:checked ~ #hamitems { display: block; }
+
+    .navigation{
+        display: none;
+    }
+    .headitem{
+        width: 50%;
+    }
+    .search_bar{
+        display: none;
+    }
+    .category{
+        display: none;
+    }
+
+    .selection{
+        margin: 10px auto;
+        grid-template-columns: auto auto;
+    }
+    .footer{
+
+        flex-direction: column;
+    }
+
+    .griditem{
+        margin: 10px 0 ;
+        width: 100%;
+    }
+}
+
+
+/*******************Check out page**********************/
+.carttitle{ 
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.checkout{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.checkoutdetails{
+    margin: auto;
+}
+.checkoutimg{
+    width: 100px;
+}
+
+#checkoutbttn{
+    float: right;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0,51,102);
+    color: white;
+    font-size: medium;
+    padding:5px;
+}
+#checkoutbttn a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#checkoutbttn:hover{
+    background-color:darkcyan;
+}
+
+/*************** ACCORDION! **********************************/
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .accordion p{
+    color: black;
+  }
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    color: black;
+    padding: 0 18px;
+    background-color: whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordionlist{
+    list-style-type: none;
+  }
+
+  .accordionli a{
+    text-decoration: none;
+    color:black;
+  }
+
+  .accordionli a:hover{
+    color: cadetblue;
+  }
+
+
+/******************** FOR PROFILE*********************************/
+
+.profilenav{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+}
+.profli{
+    padding: 20px; 
+    justify-content: center;
+    height:50px;
+
+}
+.profli a{
+    color:black;
+    text-decoration: none;
+    display:block;
+}
+.profli:hover{
+    background-color: #777;
+}

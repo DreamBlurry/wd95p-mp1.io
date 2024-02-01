@@ -1,0 +1,193 @@
+.theproduct{
+    margin-bottom:50px;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    gap: 20px;
+}
+
+.productcontainer{
+    position: relative;
+    width: 50%;
+}
+
+.productdetails{
+    width: 50%;
+}
+
+.details{
+  width: 100%;
+}
+
+/************* slide **********************/
+.slidecontainer{
+  width: 100%;
+}
+.container {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+.slideimg{
+
+    border-radius: 10px;
+    transition: 0.2s all ease-in-out;
+    width: 50%;
+  }
+
+.slideimg:hover{
+  transform:scale(1.4);
+}
+  /* Hide the images by default */
+  .mySlides {
+    overflow: hidden;
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: gray;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+/**************** COLLAPSIBLE****************************************************/
+.collapsible {
+  margin-top:30px ;
+  box-shadow: 1px 0 5px 5px rgb(0,0,0,0.1);
+  border-radius: 10px;
+  background-color: lightblue;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+ .collapsible:hover {
+  background-color: lightgray;
+}
+
+.content {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+
+}
+
+.detailsTable{
+  margin-top: 10px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#row td{
+  padding:10px 0;
+}
+
+#row:nth-child(even){
+  background-color: powderblue;
+}
+
+
+/*************** FOR PRODUCT DETAILS ****************/
+.forcheckout{
+  margin:auto;
+  width: 100%;
+}
+
+.forcheckout td {
+  border-collapse: collapse;
+  padding-top: 15px;
+}
+
+.brandandprice p{
+  font-weight:bolder;
+  font-size:xx-large;
+}
+
+
+/**************** RESPONSIVENESS ***************************/
+
+@media screen and (max-width:900px){
+
+    .theproduct{
+        flex-direction: column;
+        width: 99%;
+        margin: 0 auto;
+    }
+    .productcontainer{
+        margin: auto;
+        width: 70%;
+    }
+
+    .productdetails{
+        margin: 20px auto 0;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+  .brandandprice p{
+    font-size:x-large;
+  }
+}
